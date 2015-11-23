@@ -6,6 +6,7 @@ import java.util.Random;
  * 문자열 무작위 생성
  *
  * @author yongseoklee
+ * @since 0.5.0
  */
 public abstract class GeneratorUtils {
 

@@ -1,9 +1,10 @@
 package io.cogi.java.util;
 
 /**
- * 입력문자열 마스킹 유틸
+ * 문자열 마스킹 유틸리티
  *
  * @author yongseoklee
+ * @since 0.5.0
  */
 public abstract class MaskingUtils {
 
@@ -16,7 +17,7 @@ public abstract class MaskingUtils {
     /**
      * 문자열 마스킹
      *
-     * @param src 원본
+     * @param src      원본
      * @param startIdx 시작위치
      * @return 마스킹 적용된 문자열
      */
@@ -27,9 +28,9 @@ public abstract class MaskingUtils {
     /**
      * 문자열 마스킹
      *
-     * @param src 원본
+     * @param src      원본
      * @param startIdx 시작위치
-     * @param length 길이
+     * @param length   길이
      * @return 마스킹 적용된 문자열
      */
     public static String masking(String src, int startIdx, int length) {
@@ -39,8 +40,8 @@ public abstract class MaskingUtils {
     /**
      * 문자열 마스킹
      *
-     * @param src 원본
-     * @param replace 대치문자
+     * @param src      원본
+     * @param replace  대치문자
      * @param startIdx 시작위치
      * @return 마스킹 적용된 문자열
      */
@@ -51,29 +52,29 @@ public abstract class MaskingUtils {
     /**
      * 문자열 마스킹
      *
-     * @param src 원본
-     * @param replace 대치문자
+     * @param src      원본
+     * @param replace  대치문자
      * @param startIdx 시작위치
-     * @param length 길이
+     * @param length   길이
      * @return 마스킹 적용된 문자열
      */
     public static String masking(String src, char replace, int startIdx,
-            int length) {
+                                 int length) {
         return masking(src, replace, null, startIdx, length);
     }
 
     /**
      * 문자열 마스킹
      *
-     * @param src 원본
-     * @param replace 대치문자
-     * @param exclude 제외문자
+     * @param src      원본
+     * @param replace  대치문자
+     * @param exclude  제외문자
      * @param startIdx 시작위치
-     * @param length 길이
+     * @param length   길이
      * @return 마스킹 적용된 문자열
      */
     public static String masking(String src, char replace, char[] exclude,
-            int startIdx, int length) {
+                                 int startIdx, int length) {
         StringBuffer sb = new StringBuffer(src);
 
         // 종료 인덱스
